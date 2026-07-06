@@ -1,12 +1,24 @@
-# Atlas Portfolio Dark Human
+# Публикация на GitHub Pages
 
-Тёмная версия сайта-портфолио, готовая к GitHub Pages.
+1. Распакуй архив.
+2. На GitHub открой репозиторий `atlas-portfolio`.
+3. Удали старые файлы или загрузи новые с заменой.
+4. В корне репозитория должны быть:
+   - index.html
+   - about.html
+   - works.html
+   - style.css
+   - app.js
+   - assets/
+   - data/
+5. Нажми Commit changes.
+6. Открой Settings → Pages.
+7. Branch: main.
+8. Folder: /root.
+9. Save.
 
-Ссылка после публикации:
+Ссылка:
+
 https://sharauttxt.github.io/atlas-portfolio/
 
-
-## Добавлены реальные проекты из GitHub
-
-- Atlas AI — локальный AI-ассистент на Python, Ollama и Telegram.
-- Atlas Digital — сайт-портфолио услуг, подготовленный под публикацию.
+После обновления нажми Ctrl + F5.

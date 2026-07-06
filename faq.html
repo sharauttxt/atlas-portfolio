@@ -1,35 +1,271 @@
-const defaultProjects = [{"id": "atlas-ai", "title": "Atlas AI — локальный AI‑ассистент", "type": "Собственный проект", "category": "bot", "price": "пет‑проект", "time": "активная разработка", "image": "assets/img/projects/atlas-ai.jpg", "description": "Локальный AI‑агент на Python, который работает через Telegram, использует Ollama, умеет планировать задачи, работать с файлами, запускать проверки и готовится к безопасному редактированию проекта.", "tasks": ["Собрана архитектура AI‑агента: planner, executor, reasoner, tools", "Добавлен Telegram‑интерфейс для управления ботом", "Подключена локальная модель через Ollama", "Реализованы инструменты для workspace, проверки проекта и безопасных Git‑действий"], "stack": ["Python", "Telegram Bot API", "Ollama", "Git", "AI tools"], "demo": "https://github.com/sharauttxt/Atlas", "github": "https://github.com/sharauttxt/Atlas"}, {"id": "atlas-digital", "title": "Atlas Digital — сайт‑портфолио услуг", "type": "Сайт‑портфолио", "category": "landing", "price": "собственный сайт", "time": "готов к публикации", "image": "assets/img/projects/atlas-digital.jpg", "description": "Готовый статический сайт для публикации услуг в интернете: главная страница, контакт через Telegram, SEO‑теги, Open Graph, favicon, manifest, robots.txt и sitemap.xml.", "tasks": ["Собрана структура сайта‑портфолио", "Добавлены SEO‑файлы и Open Graph‑картинка", "Оставлена связь через Telegram", "Сайт подготовлен для GitHub Pages, Netlify, Vercel или обычного хостинга"], "stack": ["HTML", "CSS", "JavaScript", "SEO", "GitHub Pages"], "demo": "https://github.com/sharauttxt/atlas-digital", "github": "https://github.com/sharauttxt/atlas-digital"}, {"id": "landing-auto", "title": "Лендинг для автосервиса", "type": "Лендинг", "category": "landing", "price": "от 7 000 ₽", "time": "2–4 дня", "image": "assets/img/projects/landing-auto.jpg", "description": "Посадочная страница для услуги: оффер, блоки доверия, цены и форма заявки.", "tasks": ["Структура страницы под рекламу", "Блок услуг и цен", "Кнопки связи", "Адаптация под телефон"], "stack": ["HTML", "CSS", "JavaScript"], "demo": "#", "github": "https://github.com/sharauttxt"}, {"id": "b2b-catalog", "title": "B2B каталог товаров", "type": "Каталог", "category": "catalog", "price": "от 18 000 ₽", "time": "5–10 дней", "image": "assets/img/projects/b2b-catalog.jpg", "description": "Каталог для компании: категории, карточки товаров, корзина-заявка и удобный путь до обращения.", "tasks": ["Категории товаров", "Карточки с характеристиками", "Корзина-заявка", "Структура под SEO"], "stack": ["HTML", "CSS", "JavaScript", "CMS-ready"], "demo": "#", "github": "https://github.com/sharauttxt"}, {"id": "telegram-lead-bot", "title": "Telegram-бот для заявок", "type": "Telegram-бот", "category": "bot", "price": "от 10 000 ₽", "time": "2–6 дней", "image": "assets/img/projects/telegram-bot.jpg", "description": "Бот с приветствием, кнопками, разделами, заявкой и простой цепочкой сообщений.", "tasks": ["Стартовое меню", "Кнопки и разделы", "Сбор заявок", "Простая воронка"], "stack": ["Python", "Telegram Bot API", "SQLite"], "demo": "#", "github": "https://github.com/sharauttxt"}, {"id": "wordpress-business", "title": "WordPress сайт компании", "type": "WordPress", "category": "wordpress", "price": "от 6 000 ₽", "time": "1–5 дней", "image": "assets/img/projects/wordpress.jpg", "description": "Настройка WordPress-сайта: страницы, форма заявки, базовые плагины и подготовка к публикации.", "tasks": ["Установка WordPress", "Настройка темы", "Формы заявок", "Базовая SEO-настройка"], "stack": ["WordPress", "Plugins", "CSS"], "demo": "#", "github": "https://github.com/sharauttxt"}, {"id": "news-parser", "title": "Парсер новостей", "type": "Автоматизация", "category": "automation", "price": "от 5 000 ₽", "time": "2–7 дней", "image": "assets/img/projects/news-parser.jpg", "description": "Скрипт или сайт, который собирает материалы по теме и помогает готовить публикации.", "tasks": ["Сбор данных", "Обработка текста", "Фильтрация материалов", "Экспорт результата"], "stack": ["Python", "Requests", "BeautifulSoup"], "demo": "#", "github": "https://github.com/sharauttxt"}, {"id": "mini-app", "title": "Telegram Mini App", "type": "Мини-приложение", "category": "app", "price": "от 15 000 ₽", "time": "5–12 дней", "image": "assets/img/projects/mini-app.jpg", "description": "Мобильный интерфейс внутри Telegram или браузера: форма, действия, интеграция с ботом.", "tasks": ["Мобильный интерфейс", "Логика действий", "Интеграция с Telegram", "Подготовка к запуску"], "stack": ["HTML", "CSS", "JavaScript", "Telegram WebApp"], "demo": "#", "github": "https://github.com/sharauttxt"}, {"id": "web-game", "title": "Браузерная мини-игра", "type": "Мини-игра", "category": "game", "price": "от 12 000 ₽", "time": "4–10 дней", "image": "assets/img/projects/web-game.jpg", "description": "Небольшая игровая механика для сайта, Telegram, промо-акции или демонстрации идеи.", "tasks": ["Игровая механика", "Экран результата", "Счёт", "Адаптация под телефон"], "stack": ["JavaScript", "Canvas", "HTML", "CSS"], "demo": "#", "github": "https://github.com/sharauttxt"}, {"id": "code-fix", "title": "Доработка сайта или кода", "type": "Правки", "category": "code", "price": "от 1 500 ₽", "time": "от 1 дня", "image": "assets/img/projects/code-fix.jpg", "description": "Исправление ошибок, форм, адаптива, кнопок, блоков или небольших функций в готовом проекте.", "tasks": ["Поиск ошибки", "Исправление кода", "Проверка результата", "Краткое объяснение"], "stack": ["HTML", "CSS", "JavaScript", "Python", "PHP"], "demo": "#", "github": "https://github.com/sharauttxt"}];
-const services = [{"title": "Лендинг", "price": "от 7 000 ₽", "text": "Одна страница для рекламы, заявок, услуги или продукта."}, {"title": "Сайт-визитка", "price": "от 8 000 ₽", "text": "Небольшой сайт для мастера, специалиста, компании или личного бренда."}, {"title": "Каталог товаров", "price": "от 18 000 ₽", "text": "Категории, карточки, фильтры, корзина-заявка и удобная навигация."}, {"title": "Telegram-бот", "price": "от 10 000 ₽", "text": "Кнопки, меню, заявки, рассылки и простая автоматизация."}, {"title": "WordPress", "price": "от 6 000 ₽", "text": "Настройка сайта, страниц, форм, темы и базовых плагинов."}, {"title": "Парсер / скрипт", "price": "от 5 000 ₽", "text": "Сбор данных, обработка файлов, автоматизация повторяющихся действий."}, {"title": "Мини-приложение", "price": "от 15 000 ₽", "text": "Небольшой сервис, Telegram Mini App или MVP под задачу."}, {"title": "Правки сайта", "price": "от 1 500 ₽", "text": "Исправить блок, кнопку, форму, адаптив, ошибку или небольшой функционал."}, {"title": "Верстка по макету", "price": "от 5 000 ₽", "text": "Аккуратная адаптивная верстка по Figma, скриншоту или описанию."}, {"title": "API и интеграции", "price": "от 8 000 ₽", "text": "Подключение Telegram, форм, таблиц, CRM или внешних сервисов."}];
+const defaultProjects = [
+  {
+    "id": "atlas-ai",
+    "title": "Atlas AI — локальный AI‑ассистент",
+    "type": "Собственный проект",
+    "category": "bot",
+    "price": "пет‑проект",
+    "time": "активная разработка",
+    "image": "assets/img/projects/atlas-ai.jpg",
+    "description": "Локальный AI‑агент на Python, который работает через Telegram и Ollama. Проект развивался как помощник для работы с задачами, файлами и проверками.",
+    "tasks": [
+      "Telegram‑интерфейс",
+      "Подключение Ollama",
+      "Архитектура agent / planner / tools",
+      "Работа с workspace и проверками"
+    ],
+    "stack": [
+      "Python",
+      "Telegram Bot API",
+      "Ollama",
+      "Git",
+      "AI tools"
+    ],
+    "demo": "https://github.com/sharauttxt/Atlas",
+    "github": "https://github.com/sharauttxt/Atlas"
+  },
+  {
+    "id": "atlas-digital",
+    "title": "Atlas Digital — сайт‑портфолио услуг",
+    "type": "Сайт‑портфолио",
+    "category": "landing",
+    "price": "собственный сайт",
+    "time": "готов к публикации",
+    "image": "assets/img/projects/atlas-digital.jpg",
+    "description": "Статический сайт для публикации услуг в интернете: главная страница, контакты, SEO‑файлы и подготовка под GitHub Pages.",
+    "tasks": [
+      "Структура сайта‑портфолио",
+      "SEO‑файлы",
+      "Open Graph и favicon",
+      "Подготовка к публикации"
+    ],
+    "stack": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "SEO",
+      "GitHub Pages"
+    ],
+    "demo": "https://github.com/sharauttxt/atlas-digital",
+    "github": "https://github.com/sharauttxt/atlas-digital"
+  },
+  {
+    "id": "landing-auto",
+    "title": "Лендинг для автосервиса",
+    "type": "Демо‑проект",
+    "category": "landing",
+    "price": "от 7 000 ₽",
+    "time": "2–4 дня",
+    "image": "assets/img/projects/landing-auto.jpg",
+    "description": "Посадочная страница для услуги: оффер, блоки доверия, цены и форма заявки.",
+    "tasks": [
+      "Структура страницы под рекламу",
+      "Блок услуг и цен",
+      "Кнопки связи",
+      "Адаптация под телефон"
+    ],
+    "stack": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "demo": "#",
+    "github": "https://github.com/sharauttxt"
+  },
+  {
+    "id": "b2b-catalog",
+    "title": "B2B каталог товаров",
+    "type": "Демо‑проект",
+    "category": "catalog",
+    "price": "от 18 000 ₽",
+    "time": "5–10 дней",
+    "image": "assets/img/projects/b2b-catalog.jpg",
+    "description": "Каталог для компании: категории, карточки товаров, корзина‑заявка и удобный путь до обращения.",
+    "tasks": [
+      "Категории товаров",
+      "Карточки с характеристиками",
+      "Корзина‑заявка",
+      "Структура под SEO"
+    ],
+    "stack": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "demo": "#",
+    "github": "https://github.com/sharauttxt"
+  },
+  {
+    "id": "telegram-lead-bot",
+    "title": "Telegram‑бот для заявок",
+    "type": "Демо‑проект",
+    "category": "bot",
+    "price": "от 10 000 ₽",
+    "time": "2–6 дней",
+    "image": "assets/img/projects/telegram-bot.jpg",
+    "description": "Бот с приветствием, кнопками, разделами, заявкой и простой цепочкой сообщений.",
+    "tasks": [
+      "Стартовое меню",
+      "Кнопки и разделы",
+      "Сбор заявок",
+      "Простая воронка"
+    ],
+    "stack": [
+      "Python",
+      "Telegram Bot API"
+    ],
+    "demo": "#",
+    "github": "https://github.com/sharauttxt"
+  },
+  {
+    "id": "wordpress-business",
+    "title": "WordPress сайт компании",
+    "type": "Демо‑проект",
+    "category": "wordpress",
+    "price": "от 6 000 ₽",
+    "time": "1–5 дней",
+    "image": "assets/img/projects/wordpress.jpg",
+    "description": "Настройка WordPress‑сайта: страницы, форма заявки, базовые плагины и подготовка к публикации.",
+    "tasks": [
+      "Установка WordPress",
+      "Настройка темы",
+      "Формы заявок",
+      "Базовая SEO‑настройка"
+    ],
+    "stack": [
+      "WordPress",
+      "CSS",
+      "Plugins"
+    ],
+    "demo": "#",
+    "github": "https://github.com/sharauttxt"
+  },
+  {
+    "id": "news-parser",
+    "title": "Парсер новостей",
+    "type": "Концепт",
+    "category": "automation",
+    "price": "от 5 000 ₽",
+    "time": "2–7 дней",
+    "image": "assets/img/projects/news-parser.jpg",
+    "description": "Скрипт или сайт, который собирает материалы по теме и помогает готовить публикации.",
+    "tasks": [
+      "Сбор данных",
+      "Обработка текста",
+      "Фильтрация материалов",
+      "Экспорт результата"
+    ],
+    "stack": [
+      "Python",
+      "Requests",
+      "BeautifulSoup"
+    ],
+    "demo": "#",
+    "github": "https://github.com/sharauttxt"
+  },
+  {
+    "id": "mini-app",
+    "title": "Telegram Mini App",
+    "type": "Концепт",
+    "category": "app",
+    "price": "от 15 000 ₽",
+    "time": "5–12 дней",
+    "image": "assets/img/projects/mini-app.jpg",
+    "description": "Мобильный интерфейс внутри Telegram или браузера: форма, действия, интеграция с ботом.",
+    "tasks": [
+      "Мобильный интерфейс",
+      "Логика действий",
+      "Интеграция с Telegram",
+      "Подготовка к запуску"
+    ],
+    "stack": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Telegram WebApp"
+    ],
+    "demo": "#",
+    "github": "https://github.com/sharauttxt"
+  }
+];
+const services = [
+  {
+    "title": "Лендинг",
+    "price": "от 7 000 ₽",
+    "text": "Одна страница для рекламы, заявок, услуги или продукта."
+  },
+  {
+    "title": "Сайт‑визитка",
+    "price": "от 8 000 ₽",
+    "text": "Небольшой сайт для мастера, специалиста, компании или личного бренда."
+  },
+  {
+    "title": "Каталог товаров",
+    "price": "от 18 000 ₽",
+    "text": "Категории, карточки, фильтры, корзина‑заявка и удобная навигация."
+  },
+  {
+    "title": "Telegram‑бот",
+    "price": "от 10 000 ₽",
+    "text": "Кнопки, меню, заявки, рассылки и простая автоматизация."
+  },
+  {
+    "title": "WordPress",
+    "price": "от 6 000 ₽",
+    "text": "Настройка сайта, страниц, форм, темы и базовых плагинов."
+  },
+  {
+    "title": "Парсер / скрипт",
+    "price": "от 5 000 ₽",
+    "text": "Сбор данных, обработка файлов, автоматизация повторяющихся действий."
+  },
+  {
+    "title": "Мини‑приложение",
+    "price": "от 15 000 ₽",
+    "text": "Небольшой сервис, Telegram Mini App или MVP под задачу."
+  },
+  {
+    "title": "Правки сайта",
+    "price": "от 1 500 ₽",
+    "text": "Исправить блок, кнопку, форму, адаптив, ошибку или небольшой функционал."
+  }
+];
 
 const menu = document.querySelector("#menu");
 const burger = document.querySelector("#burger");
 const modal = document.querySelector("#modal");
 const modalContent = document.querySelector("#modalContent");
 
-if (burger) burger.addEventListener("click", () => menu.classList.toggle("open"));
-if (menu) menu.querySelectorAll("a").forEach(a => a.addEventListener("click", () => menu.classList.remove("open")));
-
-function getProjects() {
-  return defaultProjects;
+if (burger) {
+  burger.addEventListener("click", () => menu.classList.toggle("open"));
 }
 
-function projectCard(p) {
+if (menu) {
+  menu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => menu.classList.remove("open"));
+  });
+}
+
+function projectCard(project) {
   return `
     <article class="project-card">
       <div class="project-card__image">
-        <img src="${p.image}" alt="${p.title}">
+        <img src="${project.image}" alt="${project.title}">
       </div>
+
       <div class="project-body">
-        <span class="tag">${p.type}</span>
-        <h3>${p.title}</h3>
-        <p>${p.description}</p>
+        <span class="tag">${project.type}</span>
+        <h3>${project.title}</h3>
+        <p>${project.description}</p>
+
         <div class="project-meta">
-          <span>${p.price}</span>
-          <span>${p.time}</span>
+          <span>${project.price}</span>
+          <span>${project.time}</span>
         </div>
+
         <div class="card-actions">
-          <button class="small-btn" onclick="openProject('${p.id}')">Подробнее</button>
-          <a class="small-btn" href="${p.demo}" target="_blank" rel="noopener">GitHub</a>
+          <button class="small-btn" onclick="openProject('${project.id}')">Подробнее</button>
+          <a class="small-btn" href="${project.demo}" target="_blank" rel="noopener">Ссылка</a>
         </div>
       </div>
     </article>
@@ -39,7 +275,8 @@ function projectCard(p) {
 function renderHomeProjects() {
   const grid = document.querySelector("#homeProjects");
   if (!grid) return;
-  grid.innerHTML = getProjects().slice(0, 3).map(projectCard).join("");
+
+  grid.innerHTML = defaultProjects.slice(0, 3).map(projectCard).join("");
 }
 
 function renderProjects() {
@@ -52,54 +289,75 @@ function renderProjects() {
 
   function draw() {
     const q = (searchInput?.value || "").toLowerCase().trim();
-    const list = getProjects().filter(p => {
-      const byFilter = activeFilter === "all" || p.category === activeFilter;
-      const bySearch = !q || [p.title, p.type, p.description, ...(p.stack || [])].join(" ").toLowerCase().includes(q);
+
+    const list = defaultProjects.filter((project) => {
+      const byFilter = activeFilter === "all" || project.category === activeFilter;
+      const bySearch = !q || [project.title, project.type, project.description, ...(project.stack || [])].join(" ").toLowerCase().includes(q);
       return byFilter && bySearch;
     });
 
     grid.innerHTML = list.map(projectCard).join("") || `<div class="note-box"><h3>Ничего не найдено</h3><p>Попробуй изменить поиск или фильтр.</p></div>`;
   }
 
-  filters.forEach(btn => btn.addEventListener("click", () => {
-    filters.forEach(b => b.classList.remove("active"));
-    btn.classList.add("active");
-    activeFilter = btn.dataset.filter;
-    draw();
-  }));
+  filters.forEach((button) => {
+    button.addEventListener("click", () => {
+      filters.forEach((item) => item.classList.remove("active"));
+      button.classList.add("active");
+      activeFilter = button.dataset.filter;
+      draw();
+    });
+  });
 
-  if (searchInput) searchInput.addEventListener("input", draw);
+  if (searchInput) {
+    searchInput.addEventListener("input", draw);
+  }
+
   draw();
 }
 
 function openProject(id) {
-  const p = getProjects().find(x => x.id === id);
-  if (!p || !modal || !modalContent) return;
+  const project = defaultProjects.find((item) => item.id === id);
+  if (!project || !modal || !modalContent) return;
 
   modalContent.innerHTML = `
-    <div class="modal-image"><img src="${p.image}" alt="${p.title}"></div>
-    <span class="tag">${p.type}</span>
-    <h2>${p.title}</h2>
-    <p>${p.description}</p>
-    <div class="project-meta">
-      <span>${p.price}</span>
-      <span>${p.time}</span>
+    <div class="modal-image">
+      <img src="${project.image}" alt="${project.title}">
     </div>
-    <ul>${p.tasks.map(t => `<li>${t}</li>`).join("")}</ul>
-    <div class="stack">${p.stack.map(t => `<span>${t}</span>`).join("")}</div>
+
+    <span class="tag">${project.type}</span>
+    <h2>${project.title}</h2>
+    <p>${project.description}</p>
+
+    <div class="project-meta">
+      <span>${project.price}</span>
+      <span>${project.time}</span>
+    </div>
+
+    <ul>${project.tasks.map((task) => `<li>${task}</li>`).join("")}</ul>
+
+    <div class="stack">
+      ${project.stack.map((item) => `<span>${item}</span>`).join("")}
+    </div>
+
     <div class="card-actions">
-      <a class="btn primary" href="${p.demo}" target="_blank" rel="noopener">Открыть GitHub</a>
-      <a class="btn secondary" href="${p.github}" target="_blank" rel="noopener">Репозиторий</a>
+      <a class="btn primary" href="${project.demo}" target="_blank" rel="noopener">Открыть</a>
+      <a class="btn secondary" href="${project.github}" target="_blank" rel="noopener">GitHub / кейс</a>
     </div>
   `;
+
   modal.classList.add("open");
 }
 
-document.addEventListener("click", e => {
-  if (e.target.dataset.close !== undefined) modal?.classList.remove("open");
+document.addEventListener("click", (event) => {
+  if (event.target.dataset.close !== undefined) {
+    modal?.classList.remove("open");
+  }
 });
-document.addEventListener("keydown", e => {
-  if (e.key === "Escape") modal?.classList.remove("open");
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    modal?.classList.remove("open");
+  }
 });
 
 function renderServices() {
@@ -107,21 +365,21 @@ function renderServices() {
   const table = document.querySelector("#priceTable");
 
   if (grid) {
-    grid.innerHTML = services.map(s => `
+    grid.innerHTML = services.map((service) => `
       <article class="service-card">
-        <h3>${s.title}</h3>
-        <p>${s.text}</p>
-        <strong>${s.price}</strong>
+        <h3>${service.title}</h3>
+        <p>${service.text}</p>
+        <strong>${service.price}</strong>
       </article>
     `).join("");
   }
 
   if (table) {
-    table.innerHTML = services.map(s => `
+    table.innerHTML = services.map((service) => `
       <div class="price-row">
-        <b>${s.title}</b>
-        <strong>${s.price}</strong>
-        <p>${s.text}</p>
+        <b>${service.title}</b>
+        <strong>${service.price}</strong>
+        <p>${service.text}</p>
       </div>
     `).join("");
   }
@@ -133,10 +391,12 @@ function initBrief() {
   const copyBtn = document.querySelector("#copyBrief");
   const telegram = document.querySelector("#sendTelegram");
   const mail = document.querySelector("#sendMail");
+
   if (!form || !output) return;
 
-  form.addEventListener("submit", e => {
-    e.preventDefault();
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
     const data = new FormData(form);
 
     const message = `Здравствуйте! Хочу обсудить проект.
@@ -158,7 +418,11 @@ ${data.get("details") || "не указано"}`;
   });
 
   copyBtn?.addEventListener("click", async () => {
-    if (!output.value.trim()) return alert("Сначала соберите сообщение.");
+    if (!output.value.trim()) {
+      alert("Сначала соберите сообщение.");
+      return;
+    }
+
     await navigator.clipboard.writeText(output.value);
     alert("Сообщение скопировано.");
   });
