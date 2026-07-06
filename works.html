@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Atlas Portfolio — работы</title>
+  <meta name="description" content="Atlas Portfolio — портфолио фрилансера: сайты, боты, WordPress, каталоги, парсеры, приложения и мини-игры." />
+  <meta name="theme-color" content="#090b17" />
+
+  <meta property="og:title" content="Atlas Portfolio — работы" />
+  <meta property="og:description" content="Atlas Portfolio — портфолио фрилансера: сайты, боты, WordPress, каталоги, парсеры, приложения и мини-игры." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sharauttxt.github.io/atlas-portfolio/" />
+  <meta property="og:image" content="https://sharauttxt.github.io/atlas-portfolio/assets/img/og-preview.png" />
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-grid"></div>
+
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="index.html" aria-label="Atlas Portfolio"><span>A</span> Atlas Portfolio</a>
+      <nav class="menu" id="menu">
+        <a class="" href="index.html">Главная</a>
+<a class="active" href="works.html">Работы</a>
+<a class="" href="services.html">Услуги</a>
+<a class="" href="prices.html">Цены</a>
+<a class="" href="brief.html">Бриф</a>
+<a class="" href="contacts.html">Контакты</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Открыть меню"><i></i><i></i><i></i></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+  <div class="container">
+    <span class="badge">Портфолио</span>
+    <h1>Каталог работ</h1>
+    <p>Работы можно фильтровать, искать по названию и открывать подробнее. Реальные карточки и скриншоты добавим позже.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="toolbar">
+      <input id="searchInput" type="search" placeholder="Поиск по работам..." />
+      <div class="filters" id="filters">
+        <button class="active" data-filter="all">Все</button>
+        <button data-filter="landing">Лендинги</button>
+        <button data-filter="catalog">Каталоги</button>
+        <button data-filter="bot">Боты</button>
+        <button data-filter="wordpress">WordPress</button>
+        <button data-filter="automation">Автоматизация</button>
+        <button data-filter="app">Приложения</button>
+        <button data-filter="game">Игры</button>
+        <button data-filter="code">Код</button>
+      </div>
+    </div>
+    <div class="projects-grid" id="projectsGrid"></div>
+  </div>
+</section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2026 Atlas Portfolio</p>
+      <div>
+        <a href="https://t.me/meekww" target="_blank" rel="noopener">Telegram</a>
+        <a href="https://github.com/sharauttxt" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://kwork.ru/user/sharautt" target="_blank" rel="noopener">Kwork</a>
+        <a href="https://www.fl.ru/users/skoskr8/portfolio/" target="_blank" rel="noopener">FL.ru</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="modal">
+    <div class="modal__overlay" data-close></div>
+    <div class="modal__box">
+      <button class="modal__close" data-close>×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

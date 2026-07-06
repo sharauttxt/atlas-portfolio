@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sharauttxt.github.io/atlas-portfolio/sitemap.xml
