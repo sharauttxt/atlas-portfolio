@@ -3,8 +3,8 @@
   "short_name": "Atlas",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#090b17",
-  "theme_color": "#090b17",
+  "background_color": "#f7f2ea",
+  "theme_color": "#f7f2ea",
   "icons": [
     {
       "src": "assets/img/apple-touch-icon.png",

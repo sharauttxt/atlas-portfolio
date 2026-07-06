@@ -1,23 +1,23 @@
-# Atlas Portfolio Final
+# Atlas Portfolio Human
 
-Финальная статическая версия сайта-портфолио.
+Более спокойная и человеческая версия сайта-портфолио.
 
-## Что уже готово
+## Что изменено
 
-- Главная страница
-- Каталог работ
-- Страница услуг
-- Страница цен
-- Бриф клиента
-- Контакты
-- FAQ
-- Страница 404
-- Favicon
-- Open Graph preview
-- `robots.txt`
-- `sitemap.xml`
-- `.nojekyll` для GitHub Pages
-- `site.webmanifest`
+- Убран неоновый “AI-style”
+- Добавлен светлый тёплый дизайн
+- Добавлена фоновая картинка рабочего стола
+- Добавлены изображения для карточек работ
+- Тексты переписаны проще и человечнее
+- Сайт остаётся готовым для GitHub Pages
+
+## Публикация
+
+Загрузить содержимое папки в репозиторий `atlas-portfolio`.
+
+После включения GitHub Pages сайт будет доступен по ссылке:
+
+https://sharauttxt.github.io/atlas-portfolio/
 
 ## Контакты
 
@@ -26,17 +26,3 @@
 - Kwork: https://kwork.ru/user/sharautt
 - FL.ru: https://www.fl.ru/users/skoskr8/portfolio/
 - Email: skoskr8@gmail.com
-
-## Публичная ссылка после публикации
-
-Если создать репозиторий `atlas-portfolio` в аккаунте `sharauttxt`, сайт будет открываться по ссылке:
-
-https://sharauttxt.github.io/atlas-portfolio/
-
-## Как открыть локально
-
-Просто открой файл `index.html` в браузере.
-
-## Как опубликовать
-
-Смотри файл `DEPLOY.md`.

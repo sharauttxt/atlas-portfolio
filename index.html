@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Atlas Portfolio — сайты, боты и автоматизация</title>
-  <meta name="description" content="Atlas Portfolio — портфолио фрилансера: сайты, боты, WordPress, каталоги, парсеры, приложения и мини-игры." />
-  <meta name="theme-color" content="#090b17" />
+  <meta name="description" content="Atlas Portfolio — портфолио фрилансера: сайты, боты, WordPress, каталоги, парсеры и автоматизация." />
+  <meta name="theme-color" content="#f7f2ea" />
 
   <meta property="og:title" content="Atlas Portfolio — сайты, боты и автоматизация" />
-  <meta property="og:description" content="Atlas Portfolio — портфолио фрилансера: сайты, боты, WordPress, каталоги, парсеры, приложения и мини-игры." />
+  <meta property="og:description" content="Atlas Portfolio — портфолио фрилансера: сайты, боты, WordPress, каталоги, парсеры и автоматизация." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://sharauttxt.github.io/atlas-portfolio/" />
   <meta property="og:image" content="https://sharauttxt.github.io/atlas-portfolio/assets/img/og-preview.png" />
@@ -20,8 +20,6 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="bg-grid"></div>
-
   <header class="header">
     <div class="container nav">
       <a class="logo" href="index.html" aria-label="Atlas Portfolio"><span>A</span> Atlas Portfolio</a>
@@ -39,40 +37,29 @@
 
   <main>
     <section class="hero">
+  <div class="hero-bg"></div>
   <div class="container hero__grid">
     <div class="hero__content">
-      <div class="badge">Разработка сайтов, ботов и автоматизации</div>
-      <h1>Большое портфолио для фриланса и первых заказов</h1>
-      <p>
-        Atlas Portfolio — сайт, где можно показывать работы, услуги, цены, ссылки на GitHub, Kwork и FL.ru.
-        Это уже мини-портал: каталог работ, бриф, контакты, цены и готовая структура под публикацию.
+      <p class="eyebrow">Сайты, боты и небольшие веб‑решения</p>
+      <h1>Помогаю быстро запустить сайт или автоматизировать простую задачу</h1>
+      <p class="lead">
+        Делаю лендинги, сайты-визитки, каталоги, Telegram-ботов, WordPress и небольшие скрипты.
+        Без сложных презентаций: смотрю задачу, собираю первый вариант и довожу до рабочего результата.
       </p>
       <div class="hero__actions">
-        <a class="btn primary" href="works.html">Смотреть работы</a>
-        <a class="btn ghost" href="brief.html">Заполнить бриф</a>
+        <a class="btn primary" href="works.html">Посмотреть работы</a>
+        <a class="btn secondary" href="brief.html">Описать задачу</a>
       </div>
-      <div class="hero__stats">
-        <div><b>8</b><span>демо-кейсов</span></div>
-        <div><b>12+</b><span>услуг</span></div>
-        <div><b>от 1 500 ₽</b><span>стартовая цена</span></div>
+
+      <div class="trust-row">
+        <span>Старт от 1 500 ₽</span>
+        <span>Первые версии быстро</span>
+        <span>Адаптив под телефон</span>
       </div>
     </div>
 
-    <div class="hero__panel">
-      <div class="terminal">
-        <div class="terminal__top"><i></i><i></i><i></i><span>portfolio.js</span></div>
-        <pre><code>const atlas = {{
-  services: ["sites", "bots", "apps"],
-  contacts: ["telegram", "github", "kwork"],
-  goal: "получать заказы",
-  status: "ready to deploy"
-}};
-
-publish(atlas);</code></pre>
-      </div>
-      <div class="floating-card one">Telegram-боты</div>
-      <div class="floating-card two">Каталоги</div>
-      <div class="floating-card three">Парсеры</div>
+    <div class="hero-card">
+      <img src="assets/img/workspace-bg.jpg" alt="Рабочий стол с проектами" />
     </div>
   </div>
 </section>
@@ -81,53 +68,50 @@ publish(atlas);</code></pre>
   <div class="container">
     <div class="section-head">
       <div>
-        <span>Навигация</span>
-        <h2>Что внутри сайта</h2>
+        <p class="eyebrow">Направления</p>
+        <h2>Что можно заказать</h2>
       </div>
-      <p>Сайт сделан больше, чем лендинг: отдельные страницы, каталог работ, цены, контакты, бриф и подготовка к публикации по ссылке.</p>
+      <p>Оставил только понятные услуги, которые обычно ищут на фрилансе. Цены можно менять позже.</p>
     </div>
 
-    <div class="feature-grid">
-      <a class="feature-card" href="works.html"><b>01</b><h3>Каталог работ</h3><p>Фильтры, поиск, карточки проектов, описание задач и стек.</p></a>
-      <a class="feature-card" href="services.html"><b>02</b><h3>Услуги</h3><p>Направления для Kwork, FL.ru, Telegram-чатов и личных продаж.</p></a>
-      <a class="feature-card" href="prices.html"><b>03</b><h3>Цены</h3><p>Дешёвая стартовая сетка цен для первых заказов.</p></a>
-      <a class="feature-card" href="brief.html"><b>04</b><h3>Бриф клиента</h3><p>Форма, которая собирает задачу и готовит текст для Telegram.</p></a>
+    <div class="services-preview">
+      <a href="services.html"><b>Лендинги</b><span>для заявок и рекламы</span></a>
+      <a href="services.html"><b>Telegram-боты</b><span>меню, заявки, цепочки</span></a>
+      <a href="services.html"><b>Каталоги</b><span>товары и формы заказа</span></a>
+      <a href="services.html"><b>Правки сайта</b><span>быстро и недорого</span></a>
     </div>
   </div>
 </section>
 
-<section class="section section-soft">
+<section class="section section-muted">
   <div class="container">
     <div class="section-head">
       <div>
-        <span>Процесс</span>
-        <h2>Как проходит работа</h2>
+        <p class="eyebrow">Портфолио</p>
+        <h2>Демо-работы</h2>
       </div>
-      <p>Блок нужен для доверия, чтобы заказчик понимал, что будет после обращения.</p>
+      <p>Пока здесь демо-карточки. Когда появятся реальные проекты, заменим тексты, ссылки и скриншоты.</p>
     </div>
 
-    <div class="steps">
-      <div><b>1</b><h3>Разбор задачи</h3><p>Смотрю ТЗ, пример, материалы и предлагаю простой путь реализации.</p></div>
-      <div><b>2</b><h3>Первый вариант</h3><p>Собираю основу проекта, показываю результат и объясняю, что уже работает.</p></div>
-      <div><b>3</b><h3>Правки</h3><p>Вношу корректировки по текстам, блокам, логике, адаптиву и внешнему виду.</p></div>
-      <div><b>4</b><h3>Запуск</h3><p>Помогаю открыть сайт по ссылке, подключить контакты и подготовить проект к показу.</p></div>
+    <div class="home-projects" id="homeProjects"></div>
+
+    <div class="center-action">
+      <a class="btn secondary" href="works.html">Открыть все работы</a>
     </div>
   </div>
 </section>
 
 <section class="section">
-  <div class="container split-box">
+  <div class="container process">
     <div>
-      <span class="badge">Для заказчика</span>
-      <h2>Можно быстро понять, что ты делаешь</h2>
-      <p>Главная цель сайта — не просто красиво выглядеть, а помогать тебе получать ответы от клиентов: показать услуги, цены, примеры и дать быстрые кнопки связи.</p>
+      <p class="eyebrow">Как работаю</p>
+      <h2>Простой процесс без лишней бюрократии</h2>
     </div>
-    <div class="check-list">
-      <p>✓ есть Telegram, GitHub, Kwork и FL.ru</p>
-      <p>✓ есть цены “от”, чтобы не отпугивать клиента</p>
-      <p>✓ есть бриф для заявки</p>
-      <p>✓ есть структура под реальные работы</p>
-      <p>✓ сайт готов к GitHub Pages</p>
+    <div class="process-list">
+      <div><b>1</b><h3>Разбираю задачу</h3><p>Смотрю, что нужно сделать, какие есть материалы и примеры.</p></div>
+      <div><b>2</b><h3>Собираю первый вариант</h3><p>Показываю рабочую основу, а не бесконечно обсуждаю теорию.</p></div>
+      <div><b>3</b><h3>Вношу правки</h3><p>Исправляю тексты, блоки, адаптив, кнопки и логику.</p></div>
+      <div><b>4</b><h3>Помогаю запустить</h3><p>Подсказываю, как выложить сайт, подключить ссылки и контакты.</p></div>
     </div>
   </div>
 </section>
@@ -135,11 +119,11 @@ publish(atlas);</code></pre>
 <section class="section compact">
   <div class="container cta">
     <div>
-      <span>Готов к публикации</span>
-      <h2>Сайт можно открыть по публичной ссылке</h2>
-      <p>Файлы подготовлены под GitHub Pages. После загрузки в репозиторий сайт будет доступен по ссылке.</p>
+      <p class="eyebrow">Быстрый старт</p>
+      <h2>Можно просто написать задачу в Telegram</h2>
+      <p>Опиши, что нужно сделать, покажи пример и напиши желаемый срок. Я предложу самый простой вариант реализации.</p>
     </div>
-    <a class="btn primary" href="DEPLOY.md">Инструкция публикации</a>
+    <a class="btn primary" href="https://t.me/meekww" target="_blank" rel="noopener">Написать в Telegram</a>
   </div>
 </section>
   </main>

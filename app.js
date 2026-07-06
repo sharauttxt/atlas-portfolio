@@ -1,62 +1,191 @@
 [
   {
-    "title": "Лендинги",
+    "id": "landing-auto",
+    "title": "Лендинг для автосервиса",
+    "type": "Лендинг",
+    "category": "landing",
     "price": "от 7 000 ₽",
-    "text": "Одностраничные сайты для заявок, рекламы и быстрого запуска."
+    "time": "2–4 дня",
+    "image": "assets/img/projects/landing-auto.jpg",
+    "description": "Пример посадочной страницы для услуги: понятный первый экран, блоки доверия, цены и форма заявки.",
+    "tasks": [
+      "Структура страницы под рекламу",
+      "Блок услуг и цен",
+      "Кнопки связи",
+      "Адаптация под телефон"
+    ],
+    "stack": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "demo": "#",
+    "github": "https://github.com/sharauttxt"
   },
   {
-    "title": "Сайты-визитки",
-    "price": "от 8 000 ₽",
-    "text": "Сайт для специалиста, мастера, компании или личного бренда."
-  },
-  {
-    "title": "Каталоги товаров",
+    "id": "b2b-catalog",
+    "title": "B2B каталог товаров",
+    "type": "Каталог",
+    "category": "catalog",
     "price": "от 18 000 ₽",
-    "text": "Категории, карточки, корзина-заявка и удобная структура."
+    "time": "5–10 дней",
+    "image": "assets/img/projects/b2b-catalog.jpg",
+    "description": "Каталог для компании: категории, карточки товаров, корзина-заявка и удобный путь до обращения.",
+    "tasks": [
+      "Категории товаров",
+      "Карточки с характеристиками",
+      "Корзина-заявка",
+      "Структура под SEO"
+    ],
+    "stack": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "CMS-ready"
+    ],
+    "demo": "#",
+    "github": "https://github.com/sharauttxt"
   },
   {
-    "title": "Telegram-боты",
+    "id": "telegram-lead-bot",
+    "title": "Telegram-бот для заявок",
+    "type": "Telegram-бот",
+    "category": "bot",
     "price": "от 10 000 ₽",
-    "text": "Кнопки, меню, заявки, рассылки, лид-магниты и простая автоматизация."
+    "time": "2–6 дней",
+    "image": "assets/img/projects/telegram-bot.jpg",
+    "description": "Бот с приветствием, кнопками, разделами, заявкой и простой цепочкой сообщений.",
+    "tasks": [
+      "Стартовое меню",
+      "Кнопки и разделы",
+      "Сбор заявок",
+      "Простая воронка"
+    ],
+    "stack": [
+      "Python",
+      "Telegram Bot API",
+      "SQLite"
+    ],
+    "demo": "#",
+    "github": "https://github.com/sharauttxt"
   },
   {
-    "title": "WordPress",
+    "id": "wordpress-business",
+    "title": "WordPress сайт компании",
+    "type": "WordPress",
+    "category": "wordpress",
     "price": "от 6 000 ₽",
-    "text": "Установка, настройка, правки, темы, плагины и перенос сайта."
+    "time": "1–5 дней",
+    "image": "assets/img/projects/wordpress.jpg",
+    "description": "Настройка WordPress-сайта: страницы, форма заявки, базовые плагины и подготовка к публикации.",
+    "tasks": [
+      "Установка WordPress",
+      "Настройка темы",
+      "Формы заявок",
+      "Базовая SEO-настройка"
+    ],
+    "stack": [
+      "WordPress",
+      "Plugins",
+      "CSS"
+    ],
+    "demo": "#",
+    "github": "https://github.com/sharauttxt"
   },
   {
-    "title": "Парсеры",
+    "id": "news-parser",
+    "title": "Парсер новостей",
+    "type": "Автоматизация",
+    "category": "automation",
     "price": "от 5 000 ₽",
-    "text": "Сбор данных, обработка файлов, автоматизация повторяющихся действий."
+    "time": "2–7 дней",
+    "image": "assets/img/projects/news-parser.jpg",
+    "description": "Скрипт или сайт, который собирает материалы по теме и помогает готовить публикации.",
+    "tasks": [
+      "Сбор данных",
+      "Обработка текста",
+      "Фильтрация материалов",
+      "Экспорт результата"
+    ],
+    "stack": [
+      "Python",
+      "Requests",
+      "BeautifulSoup"
+    ],
+    "demo": "#",
+    "github": "https://github.com/sharauttxt"
   },
   {
-    "title": "Мини-приложения",
+    "id": "mini-app",
+    "title": "Telegram Mini App",
+    "type": "Мини-приложение",
+    "category": "app",
     "price": "от 15 000 ₽",
-    "text": "Простые веб-сервисы, Telegram Mini Apps и MVP."
+    "time": "5–12 дней",
+    "image": "assets/img/projects/mini-app.jpg",
+    "description": "Простой мобильный интерфейс внутри Telegram или браузера: форма, действия, интеграция с ботом.",
+    "tasks": [
+      "Мобильный интерфейс",
+      "Логика действий",
+      "Интеграция с Telegram",
+      "Подготовка к запуску"
+    ],
+    "stack": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Telegram WebApp"
+    ],
+    "demo": "#",
+    "github": "https://github.com/sharauttxt"
   },
   {
-    "title": "Мини-игры",
+    "id": "web-game",
+    "title": "Браузерная мини-игра",
+    "type": "Мини-игра",
+    "category": "game",
     "price": "от 12 000 ₽",
-    "text": "Браузерные игры, промо-игры и игровые прототипы."
+    "time": "4–10 дней",
+    "image": "assets/img/projects/web-game.jpg",
+    "description": "Небольшая игровая механика для сайта, Telegram, промо-акции или демонстрации идеи.",
+    "tasks": [
+      "Игровая механика",
+      "Экран результата",
+      "Счёт",
+      "Адаптация под телефон"
+    ],
+    "stack": [
+      "JavaScript",
+      "Canvas",
+      "HTML",
+      "CSS"
+    ],
+    "demo": "#",
+    "github": "https://github.com/sharauttxt"
   },
   {
-    "title": "Доработка кода",
+    "id": "code-fix",
+    "title": "Доработка сайта или кода",
+    "type": "Правки",
+    "category": "code",
     "price": "от 1 500 ₽",
-    "text": "Исправление ошибок, адаптива, форм, блоков и функций."
-  },
-  {
-    "title": "API и интеграции",
-    "price": "от 8 000 ₽",
-    "text": "Подключение сервисов, заявок, Telegram, таблиц и внешних API."
-  },
-  {
-    "title": "Аудит сайта",
-    "price": "от 2 000 ₽",
-    "text": "Проверка ошибок, адаптива, скорости, структуры и базовых проблем сайта."
-  },
-  {
-    "title": "Верстка по макету",
-    "price": "от 5 000 ₽",
-    "text": "Аккуратная адаптивная верстка по Figma, скриншоту или описанию."
+    "time": "от 1 дня",
+    "image": "assets/img/projects/code-fix.jpg",
+    "description": "Исправление ошибок, форм, адаптива, кнопок, блоков или небольших функций в готовом проекте.",
+    "tasks": [
+      "Поиск ошибки",
+      "Исправление кода",
+      "Проверка результата",
+      "Краткое объяснение"
+    ],
+    "stack": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Python",
+      "PHP"
+    ],
+    "demo": "#",
+    "github": "https://github.com/sharauttxt"
   }
 ]
